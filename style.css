@@ -305,13 +305,13 @@ header
 
 /*About section required css*/
 
-.container p{
+.container1 p{
     position: relative;
     font-size: 18px ;
     margin: 25px 0 45px;
 
 }
-.container p::before
+.container1 p::before
 {
     content: '';
     position: absolute;
@@ -328,20 +328,39 @@ header
     background-color: #0E0000;
     padding: 60px 2;
   }
-
-.container #t1:hover{
-    color: #00abf0;
-    font-size: large;
-}  
-.container #t1
+.meter
 {
-    text-align: left;
-    margin-left: 0px;
-    margin-right: 0;
-    margin-top: 0;
-
+    display: flex;
+    align-items: center;
 }
-  .container {
+.meter{
+    width: 700px;
+    height: 100px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.space{
+    width: 450px;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 25%;
+}
+.meterp2
+{
+    display: flex;
+    align-items: center;
+}
+.meterp2{
+    width: 700px;
+    height: 100px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .container1 {
     max-width: 600px;
     height: 105vh;
     margin: 0 auto;
@@ -350,7 +369,7 @@ header
     background: #0E0000;
   }
   
-  .container h2 {
+  .container1 h2 {
     margin-top: 5px;
     padding-top: 50px;
     margin-bottom: 20px;
@@ -358,7 +377,7 @@ header
     margin-left: 0px;
   }
   
-  .container p {
+  .container1 p {
     font-size: 1.2em;
     color: #ededed;
     margin-bottom: 30px;
@@ -376,7 +395,7 @@ header
   .meter2 {
     width: 400px; /* Change the width as needed */
     height: 20px; /* Change the height as needed */
-    background-color: #f0f0f0;
+    background-color: #f0f0f0; 
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;/* Add cursor pointer to indicate it's clickable */

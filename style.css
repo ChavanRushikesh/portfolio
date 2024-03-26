@@ -305,11 +305,34 @@ header
 
 /*About section required css*/
 
+.about
+{
+    height: 100vh; /* add vertical down space*/
+    background-color: #0E0000;
+
+    background-size: cover;
+    background-position: center;
+    display: flex;  
+    align-items: center; 
+    padding: 0 10%;
+}
+.container1
+{
+    position: relative; /* or absolute if you want it relative to a parent container */
+    top: 0;
+    left: 0;
+}
+.container1 h1{
+    margin-left: 45%;
+    align-items: center;
+}
 .container1 p{
     position: relative;
+    align-items: center;
+    margin-left: 20%;
+    width: 80%;
     font-size: 18px ;
     margin: 25px 0 45px;
-
 }
 .container1 p::before
 {
@@ -323,107 +346,8 @@ header
     animation: showRight 1s ease forwards;
     animation-delay: 1.6s;
 }
-
-#about {
-    background-color: #0E0000;
-    padding: 60px 2;
-  }
-.meter
-{
-    display: flex;
-    align-items: center;
-}
-.meter{
-    width: 700px;
-    height: 100px;
-    margin: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.space{
-    width: 450px;
-    font-size: 25px;
-    text-align: center;
-    margin-left: 25%;
-}
-.meterp2
-{
-    display: flex;
-    align-items: center;
-}
-.meterp2{
-    width: 700px;
-    height: 100px;
-    margin: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-  .container1 {
-    max-width: 600px;
-    height: 105vh;
-    margin: 0 auto;
-    text-align: center;
-    align-items: center;
-    background: #0E0000;
-  }
-  
-  .container1 h2 {
-    margin-top: 5px;
-    padding-top: 50px;
-    margin-bottom: 20px;
-    font-size: 2em;
-    margin-left: 0px;
-  }
-  
-  .container1 p {
-    font-size: 1.2em;
-    color: #ededed;
-    margin-bottom: 30px;
-  }
-  
-/*Meter mark css*/
-.meter1 {
-    width: 400px; /* Change the width as needed */
-    height: 20px; /* Change the height as needed */
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;/* Add cursor pointer to indicate it's clickable */
-  }
-  .meter2 {
-    width: 400px; /* Change the width as needed */
-    height: 20px; /* Change the height as needed */
-    background-color: #f0f0f0; 
-    border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;/* Add cursor pointer to indicate it's clickable */
-  }
-  .meter3 {
-    width: 400px; /* Change the width as needed */
-    height: 20px; /* Change the height as needed */
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;/* Add cursor pointer to indicate it's clickable */
-  }
-  .meter4 {
-    width: 400px; /* Change the width as needed */
-    height: 20px; /* Change the height as needed */
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;/* Add cursor pointer to indicate it's clickable */
-  }
-  .mark {
-    display: block;
-    height: 100%;
-    background-color: #007bff; /* Change the color of the mark */
-    border-radius: 10px 0 0 10px;
-    transition: width 0.5s ease-in-out; /* Add transition for smooth animation */
-  }
-  
+ 
+ 
   /*here is the services data*/
   #services {
     max-width: 600px;
